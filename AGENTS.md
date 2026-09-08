@@ -6,7 +6,7 @@ Purpose
 
 This file governs AI coding agents working in this repository.
 
-Repository documentation is the product source of truth.
+Approved repository documentation is the product source of truth.
 
 Required Reading Order
 
@@ -21,6 +21,38 @@ the specific docs/FEATURES/FEATURE-XXX.md being implemented
 
 Do not rely on assumptions from previous chats when repository documentation provides an answer.
 
+Authoritative vs Non-Authoritative Documents
+
+Files containing:
+
+approved product decisions
+approved feature specifications
+approved architecture
+active project state
+
+may govern implementation.
+
+The following document is explicitly non-authoritative:
+
+docs/FOUNDER_VISION_BACKLOG.md
+
+It contains:
+
+future ideas
+hypotheses
+potential experiments
+commercial concepts
+long-term vision material
+
+Do not implement anything from that document merely because it is documented.
+
+An item must first be promoted through the normal process:
+
+founder review
+product/architecture decision where required
+DECISIONS.md update where applicable
+approved feature specification
+CURRENT_STATE.md authorization to begin
 Product Scope
 
 The long-term product is an AI communication, charisma, and presence coach.
@@ -51,6 +83,10 @@ PROPOSED
 
 May be discussed or documented but should not automatically be implemented.
 
+NON-AUTHORITATIVE / BACKLOG
+
+Must not be treated as a requirement.
+
 If implementation requires a major undocumented product or architecture decision, stop that implementation and document the decision first.
 
 Feature Discipline
@@ -72,6 +108,58 @@ Do not implement later features merely because their requirements are known.
 
 Each feature should be independently implementable and testable.
 
+FEATURE-001 Scope Rule
+
+FEATURE-001 is deliberately minimal.
+
+Implement only:
+
+app shell
+prompt selection
+custom prompt entry
+selected-prompt state
+navigation required to reach the future recording route
+
+Do not add:
+
+onboarding
+Today / Practice / Progress tabs
+permanent bottom navigation
+progress
+authentication
+monetization
+daily content
+gamification
+personalization
+event preparation
+other backlog ideas
+
+unless the relevant repository documentation is first updated and approved.
+
+Design Direction
+
+Use the approved dark-first direction:
+
+graphite surfaces with an indigo primary accent family
+
+Exact visual tokens remain adjustable implementation details.
+
+Do not treat example hex values in DESIGN_SYSTEM.md as immutable product decisions.
+
+Preserve:
+
+accessibility
+visual hierarchy
+restrained use of accent color
+serious performance-coaching tone
+
+Avoid:
+
+neon-heavy visual treatment
+gaming aesthetics
+cyberpunk styling
+interview-specific visual branding
+alpha/dominance aesthetics
 Validation Gate
 
 FEATURE-001 through FEATURE-007 form the core practice loop.
@@ -294,6 +382,8 @@ Scope Escalation
 
 The following require a documented decision before implementation:
 
+onboarding expansion
+permanent navigation architecture
 video analysis
 computer vision
 live conversation
@@ -308,6 +398,9 @@ user-generated public content
 major monetization changes
 permanent audio storage
 health or clinical functionality
+personalization engine
+gamification system
+event-preparation system
 Final Rule
 
 When uncertain, choose the implementation that:

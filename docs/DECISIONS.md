@@ -190,3 +190,63 @@ They must be labeled:
 Initial engineering targets — subject to revision after beta measurement.
 
 Beta evidence may tighten, loosen, or replace these thresholds.
+
+D-016 — Dark-First Visual Direction
+
+Status: APPROVED
+
+The initial product visual direction is:
+
+Dark-first graphite surfaces with indigo as the primary accent family.
+
+The intended visual character remains:
+
+modern
+focused
+credible
+private
+performance-oriented
+calm rather than flashy
+
+This is a design direction, not a fixed palette specification.
+
+Exact:
+
+hex values
+shades
+contrast values
+surface elevations
+secondary accent colors
+
+remain adjustable implementation/design tokens and may evolve through UI testing without requiring a new founder-level product decision.
+
+The product should not become:
+
+neon-heavy
+gamer-styled
+cyberpunk
+visually aggressive
+"alpha male" branded
+D-017 — Minimal FEATURE-001 Navigation
+
+Status: APPROVED
+
+FEATURE-001 will remain deliberately minimal.
+
+It will include only the navigation required for:
+
+Prompt selection → transition into the future recording route
+
+FEATURE-001 will not introduce:
+
+onboarding questionnaires
+communication-goal onboarding
+permanent Today / Practice / Progress tabs
+placeholder destinations for future features
+progress navigation
+account navigation
+monetization navigation
+
+Permanent application navigation should be designed only when enough real destinations exist to justify it.
+
+No other founder-note ideas are promoted into V1 by this decision.
